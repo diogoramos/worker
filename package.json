@@ -1,0 +1,19 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "Worker for search tweets",
+  "main": "index.js",
+  "scripts": {
+    "test": "tst"
+  },
+  "keywords": [
+    "NodeJS",
+    "Twitter",
+    "Worker"
+  ],
+  "author": "Diogo Saraiva Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
