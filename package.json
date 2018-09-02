@@ -14,6 +14,7 @@
   "author": "Diogo Saraiva Ramos",
   "license": "ISC",
   "dependencies": {
+    "cluster": "^0.7.7",
     "twitter": "^1.7.1"
   }
 }
