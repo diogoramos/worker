@@ -6,7 +6,7 @@ const config = {
   	consumer_secret: process.env.TWITTER_CONSUMER_SECRET || "",
   	access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY || "",
 	access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET || "",
-	hashtags: process.env.HASHTAGS || "openbanking, apifirst, devops, cloudfirst, microservices, apigateway, oauth, swagger, raml, openapis"  
+	hashtags: process.env.HASHTAGS || "#devops2"  
 }
 
 module.exports = config;

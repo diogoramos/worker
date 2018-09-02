@@ -10,14 +10,19 @@ var client = new Twitter({
 
 process.on('message', function(hashtag) {
     process.send({
-        child   : process.pid,
-        result  : hashtag
+        hashtag  : hashtag
     },
     client.get('search/tweets', {q: hashtag, count:100}, function(error, tweets, response) {
+        console.log('[agent.js] Agent com PID', process.pid , 'começou a busca e processamento.');
         for(let i = 0; i < tweets.statuses.length; i++){
-            //console.log(tweets.statuses[i].user.name);
+            
+            console.log(tweets.statuses[i].user.screen_name);
+            //console.log(tweets);
         }
        //console.log(tweets);
     }));
     process.disconnect();
 });
+
+
+    
